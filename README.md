@@ -77,3 +77,16 @@ Don't use any public folder on your frontend. This folder won't be accessible on
 
 If you want to access the logs of your online projet (to follow the deployement or to watch any bug error), connect to your VPS (`ssh user@host`).
 Then, go on your specific project and run  `docker compose logs -t -f`.
+
+pour instal GPT : 
+npm install openai
+Pour coder une requête vers l’API ChatGPT, il vous faudra :
+
+VOTRE_CLE_API_OPENAI qui est la clef API récupérée plus tôt dans ce tutoriel.
+
+VOTRE_REQUETE_CHATGPT qui est le prompt que vous écririez normalement sur le site de l’outil ChatGPT.
+
+
+
+
+pour désactiver Eslint il faut à chaque commit faire git commit -m "......" --no-verify
