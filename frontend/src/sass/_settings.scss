@@ -1,19 +1,21 @@
-$beige-creme: #F5F5DC;
-$marron-chocolat: #6B4423;
-$or-rose: #FFC0CB;
+$beige-creme: #f5f5dc;
+$marron-chocolat: #571313;
+$or-rose: #ffc0cb;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-    text-decoration: none;
-    list-style: none;
-    background-color: #F5F5DC;
-    outline: none;
-    transition: all 0.4s ease-in-out;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  background-color: #f5f5dc;
 }
