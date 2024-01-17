@@ -30,10 +30,12 @@
     "concurrently": "^8.2.0",
     "cross-env": "^7.0.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "sass": "^1.69.7"
+    "lint-staged": "^13.2.3"
   },
   "dependencies": {
-    "-": "^0.0.1"
+    "-": "^0.0.1",
+    "carousel": "^0.0.3",
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.69.7"
   }
 }

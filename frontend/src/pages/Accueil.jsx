@@ -1,11 +1,13 @@
 import Carousel from "../components/Slider";
+import Footer from "../components/Footer";
 
-const Home = () => {
+function Accueil() {
   return (
     <div>
       <Carousel />
+      <Footer />
     </div>
   );
-};
+}
 
-export default Home;
+export default Accueil;
