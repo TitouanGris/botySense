@@ -1,0 +1,61 @@
+.title__slide {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.carousel {
+  position: relative !important;
+
+  .slide {
+    height: 50vh;
+  }
+
+  .overlay {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background: rgba(0, 0, 0, 0);
+    color: white !important;
+  }
+
+  .overlay__title {
+    margin: 0.8rem 0 1rem 0;
+  }
+
+  .thumbs {
+    display: flex !important;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .thumb {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .overlay__text {
+    color: red !important;
+  }
+}
+
+.tendance {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+
+  img {
+    border: solid 2px black !important;
+  }
+
+  h4 {
+    display: flex;
+    justify-content: center;
+  }
+}
