@@ -1,11 +1,13 @@
 import Carousel from "../components/Slider";
+import History from "../components/Apropos";
 
-const Home = () => {
+function Acceuil() {
   return (
     <div>
       <Carousel />
+      <History />
     </div>
   );
-};
+}
 
-export default Home;
+export default Acceuil;
