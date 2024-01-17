@@ -85,3 +85,8 @@ Pour coder une requête vers l’API ChatGPT, il vous faudra :
 VOTRE_CLE_API_OPENAI qui est la clef API récupérée plus tôt dans ce tutoriel.
 
 VOTRE_REQUETE_CHATGPT qui est le prompt que vous écririez normalement sur le site de l’outil ChatGPT.
+
+
+
+
+pour désactiver Eslint il faut à chaque commit faire git commit -m "......" --no-verify
