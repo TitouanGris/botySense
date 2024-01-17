@@ -2,9 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root";
-import Home from "./pages/Home";
 import Shampooings from "./pages/Shampooings";
+import Creme from "./pages/Creme";
+import Coloration from "./pages/Coloration";
+import Rouge from "./pages/Rouge";
 import ProductDetails from "./pages/ProductDetails";
+import Accueil from "./pages/Accueil";
+import "./sass/_index.scss";
 
 const products = [
   {
@@ -265,8 +269,8 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/Home",
-        element: <Home />,
+        index: true,
+        element: <Accueil />,
       },
       {
         path: "/Shampooings",
@@ -275,6 +279,18 @@ const router = createBrowserRouter([
       {
         path: "/Products/:id",
         element: <ProductDetails products={products} />,
+      },
+      {
+        path: "/Cremes",
+        element: <Creme products={products} />,
+      },
+      {
+        path: "/Colorations",
+        element: <Coloration products={products} />,
+      },
+      {
+        path: "/Rouges",
+        element: <Rouge products={products} />,
       },
     ],
   },
