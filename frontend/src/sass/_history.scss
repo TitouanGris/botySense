@@ -13,6 +13,10 @@
 
     }
 
+    .title_propos{
+      font-size: 60px;
+    }
+
 
     .description-container {
       display: flex;
@@ -82,13 +86,13 @@
         font-family: 'test', sans-serif;
         text-decoration: underline;
         padding: 25px;
+        margin-bottom: 50px;
         
       }
 
       .img-container2 {
         position: relative;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        padding: 50px;
         display: flex;
         justify-content: center; // Centre horizontalement
         align-items: center; // Centre verticalement
