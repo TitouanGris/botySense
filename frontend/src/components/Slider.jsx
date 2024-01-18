@@ -6,28 +6,28 @@ function Slider() {
   const datas = [
     {
       id: 1,
-      image: `./images/BotySense_slide1.svg`,
-      title: "",
-      text: "",
+      image: `${baseUrl}1.jpeg`,
+      title: "Titre du slider 1",
+      text: "Description de votre premier slide",
     },
     {
       id: 2,
-      image: `./images/BotySense_slide2.svg`,
-      title: "",
-      text: ``,
+      image: `${baseUrl}5.jpeg`,
+      title: "Titre du slider 2",
+      text: `Lorem blablabla...`,
     },
     {
       id: 3,
-      image: `./images/BotySense_slide3.svg`,
-      title: "",
-      text: ``,
+      image: `${baseUrl}2.jpeg`,
+      title: "Titre du slider 3",
+      text: `Lorem blablabla...`,
     },
   ];
 
   return (
-    <div className="container_slide">
+    <div>
       <h1 className="title__slide">Nos Incontournables</h1>
-      <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
+      <Carousel>
         {datas.map((slide) => (
           <div className="slide" key={slide.id}>
             <img className="slideimage" src={slide.image} alt="" />
@@ -38,14 +38,13 @@ function Slider() {
           </div>
         ))}
       </Carousel>
-
       <div className="tendance">
         <div className="Maquillage">
-          <img src="./images/maquillages.svg" alt="" />
+          <img src="https://via.placeholder.com/300x300" alt="" />
           <h4>MAQUILLAGE</h4>
         </div>
         <div className="soin">
-          <img src="./images/soins.svg" alt="" />
+          <img src="https://via.placeholder.com/300x300" alt="" />
           <h4>SOIN DE LA PEAU</h4>
         </div>
         <div className="coloration">
@@ -53,7 +52,7 @@ function Slider() {
           <h4>COLORATIONS</h4>
         </div>
         <div className="cheveux">
-          <img src="./images/cheveux.svg" alt="" />
+          <img src="https://via.placeholder.com/300x300" alt="" />
           <h4>CHEVEUX</h4>
         </div>
       </div>
