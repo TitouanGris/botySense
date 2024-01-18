@@ -1,30 +1,77 @@
 
 .apropos {
   .title-description {
+    background-color: white;
     .titledescription {
+      padding: 10px;
       display: flex;
       justify-content: center;
       font-size: 50px;
-      background-color: #f5f5dc;
+      background-color: white !important;
       font-family: 'test', sans-serif;
+      text-decoration: underline;
+
+    }
+
+
+    .description-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto; 
+      margin-bottom: 100px;
+      margin-top: 100px;
     }
     
-    .description-contenaire {
-      .firstparagraph {
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
-        margin: 10px;
-      }
+    .content {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      gap: 100px; 
+    }
+    
+    .image {
+      height: 768px; 
+      width: 432px;
+      border-radius: 25px;
+    }
+    
+    .content p {
+      font-size: 1.5rem;
+      margin: 10px;
+      width: 748px;
+      height: auto;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   }
+    
+    .paragraphe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+    }
+    
+    
+  
+    
+    
+    
+
+
+
 
       .img-container1 {
         position: relative;
-
         display: flex;
-        justify-content: center; // Centre horizontalement
-        align-items: center; // Centre verticalement
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 100px;
 
-        .img-citation {}
+        .gif {
+          border-radius: 25px;
+        }
+
       }
 
       .marques {
@@ -33,11 +80,15 @@
         font-size: 50px;
         background-color: #f5f5dc;
         font-family: 'test', sans-serif;
+        text-decoration: underline;
+        padding: 25px;
+        
       }
 
       .img-container2 {
         position: relative;
-
+        margin-top: 100px;
+        margin-bottom: 100px;
         display: flex;
         justify-content: center; // Centre horizontalement
         align-items: center; // Centre verticalement
@@ -170,4 +221,4 @@
       }
     }
   }
-}
+
