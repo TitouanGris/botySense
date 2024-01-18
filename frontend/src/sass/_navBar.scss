@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: $marron-chocolat;
+  font-family: 'test', sans-serif;
 
   .links {
     display: flex;
@@ -10,11 +11,12 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+    font-family: 'test', sans-serif;
       .boty {
         width: 7vw;
       }
     h3 {
-      color: $beige-creme;
+      color: white !important;
       transition: color 0.6s;
       border-bottom: 1px solid transparent;
 
