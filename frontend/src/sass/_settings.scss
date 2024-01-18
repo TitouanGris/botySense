@@ -2,6 +2,18 @@ $beige-creme: #f5f5dc;
 $marron-chocolat: #6b4423;
 $or-rose: #ffc0cb;
 
+@font-face {
+  font-family: "test";
+  src:
+    local("BlairITC-Bold"),
+    url("font/BlairITC-Bold.ttf") format("truetype");
+}
+
+body :root {
+  font-family: "BlairITC-Bold";
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
