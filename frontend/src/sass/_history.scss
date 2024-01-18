@@ -1,17 +1,17 @@
-@font-face {
-  font-family: 'BlairITC-Bold';
-  src: url('./frontend/font/BlairTC-Blod.ttf') format('truetype');
-}
 
 .apropos {
   .title-description {
+    background-color: white;
     .titledescription {
       display: flex;
       justify-content: center;
       font-size: 50px;
-      background-color: #f5f5dc;
-      font-family: 'BlairITC-Bold', sans-serif;
+      background-color: white !important;
+      font-family: 'test', sans-serif;
+      text-decoration: underline;
+
     }
+
 
     .description-container {
       display: flex;
@@ -41,7 +41,7 @@
       width: 748px;
       height: auto;
       text-align: center;
-    }
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   }
     
     .paragraphe {
       display: flex;
@@ -55,6 +55,9 @@
     
     
     
+
+
+
 
       .img-container1 {
         position: relative;
@@ -75,12 +78,14 @@
         justify-content: center;
         font-size: 50px;
         background-color: #f5f5dc;
-        font-family: 'BlairITC-Bold', sans-serif;
+        font-family: 'test', sans-serif;
+        text-decoration: underline;
       }
 
       .img-container2 {
         position: relative;
-
+        margin-top: 100px;
+        margin-bottom: 100px;
         display: flex;
         justify-content: center; // Centre horizontalement
         align-items: center; // Centre verticalement

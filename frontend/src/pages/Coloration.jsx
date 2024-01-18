@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 
 function Coloration({ products }) {
   return (
-    <div>
+    <div className="productPages">
       {products
         .filter((product) => product.categorie === "Coloration")
         .map((product) => (

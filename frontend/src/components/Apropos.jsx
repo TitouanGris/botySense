@@ -1,5 +1,3 @@
-import GifPlayer from "react-gif-player";
-
 function Apropos() {
   return (
     <div className="apropos">
@@ -11,19 +9,21 @@ function Apropos() {
             <div className="paragraphe">
               {" "}
               <p>
-                Bienvenue sur BotySense, votre destination de choix pour tout ce
-                qui concerne l'univers captivant de la beauté et de la
-                cosmétique signée Oreal. Chez BotySense, nous sommes déterminés
-                à vous découvrir votre propre sens de la beauté et de
-                l'élégance, tout en mettant à votre disposition une gamme
-                exclusive de produits de qualité supérieure. Explorez notre
-                catalogue varié et laissez-vous séduire par notre sélection
-                soigneusement choisie de produits Oreal. Que vous recherchiez
-                des produits de maquillage pour sublimer votre apparence, des
-                soins de la peau pour une peau éclatante, des produits
-                capillaires pour des cheveux magnifiques ou des parfums
-                envoûtants pour une touche de glamour, BotySense a tout ce qu'il
-                vous faut.
+                Bienvenue sur BotySense,
+                <br />
+                <br />
+                Votre destination de choix pour tout ce qui concerne l'univers
+                captivant de la beauté et de la cosmétique signée Oreal. Chez
+                BotySense, nous sommes déterminés à vous découvrir votre propre
+                sens de la beauté et de l'élégance, tout en mettant à votre
+                disposition une gamme exclusive de produits de qualité
+                supérieure. Explorez notre catalogue varié et laissez-vous
+                séduire par notre sélection soigneusement choisie de produits
+                Oreal. Que vous recherchiez des produits de maquillage pour
+                sublimer votre apparence, des soins de la peau pour une peau
+                éclatante, des produits capillaires pour des cheveux magnifiques
+                ou des parfums envoûtants pour une touche de glamour, BotySense
+                a tout ce qu'il vous faut.
               </p>
             </div>
           </div>
