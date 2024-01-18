@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-const Slider = () => {
+function Slider() {
   const baseUrl = "http://react-responsive-carousel.js.org/assets/";
   const datas = [
     {
@@ -58,6 +58,6 @@ const Slider = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Slider;
