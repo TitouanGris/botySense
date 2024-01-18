@@ -8,6 +8,7 @@ import Coloration from "./pages/Coloration";
 import Rouge from "./pages/Rouge";
 import ProductDetails from "./pages/ProductDetails";
 import Accueil from "./pages/Accueil";
+import Corbeille from "./pages/Corbeille";
 import "./sass/_index.scss";
 
 const products = [
@@ -291,6 +292,10 @@ const router = createBrowserRouter([
       {
         path: "/Rouges",
         element: <Rouge products={products} />,
+      },
+      {
+        path: "/Corbeille",
+        element: <Corbeille />,
       },
     ],
   },
