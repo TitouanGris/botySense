@@ -48,8 +48,8 @@ function Slider() {
           <h4>SOIN DE LA PEAU</h4>
         </div>
         <div className="coloration">
-          <img src="https://via.placeholder.com/300x300" alt="" />
-          <h4>COLORATION</h4>
+          <img src="./images/coloration.svg" alt="" />
+          <h4>COLORATIONS</h4>
         </div>
         <div className="cheveux">
           <img src="https://via.placeholder.com/300x300" alt="" />
