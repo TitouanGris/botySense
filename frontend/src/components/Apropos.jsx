@@ -34,7 +34,7 @@ function Apropos() {
               className="img-marques"
             />
           </div>
-          <p className="thirdparagraph">
+          {/* <p className="thirdparagraph">
             Profitez de promotions exclusives, de réductions spéciales et
             d'offres promotionnelles régulières, ainsi que de nos options de
             livraison rapide et sécurisée pour recevoir vos produits l'Oreal
@@ -46,7 +46,7 @@ function Apropos() {
             votre voyage vers la confiance en soi et l'expression de votre style
             unique. Merci de faire confiance à BotySense pour votre bien-être et
             votre beauté.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
