@@ -16,7 +16,7 @@ function NavBar() {
             <img className="boty" src="/images/BotySense.webp" alt="logo" />
           </div>
           <NavLink to="Rouges">
-            <h3>rouge à lèvres</h3>
+            <h3>rouge à</h3>
           </NavLink>
           <NavLink to="Colorations">
             <h3>colorations</h3>

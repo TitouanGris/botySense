@@ -1,13 +1,13 @@
 .containerNavBar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   background-color: $marron-chocolat;
 
   .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // justify-content: space-between;
+    // align-items: center;
     width: 100%;
   }
 
@@ -17,11 +17,9 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    .logo {
       .boty {
         width: 7vw;
       }
-    }
     h3 {
       margin: 0 50px;
       color: $beige-creme;
