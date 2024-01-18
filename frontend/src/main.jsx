@@ -14,6 +14,7 @@ const products = [
   {
     id: 1,
     nom: "Crème hydratante",
+    note: 4.5,
     categorie: "Crème de peau",
     description: "Hydrate la peau en profondeur, la laissant douce et souple.",
     descriptionLongue: `La Crème hydratante est bien plus qu'un simple soin pour la peau ; c'est une expérience revitalisante qui transcende les attentes. Plongez dans un océan de bienfaits hydratants avec cette formule exceptionnelle conçue pour offrir une hydratation en profondeur, révélant une peau d'apparence plus jeune, douce et infiniment souple.`,
@@ -25,6 +26,7 @@ const products = [
   {
     id: 2,
     nom: "Rouge à lèvres rouge vif",
+    note: 3.3,
     categorie: "Rouge à lèvre",
     description: "Donne à vos lèvres une couleur éclatante et durable.",
     descriptionLongue: `Le Rouge à lèvres rouge vif est bien plus qu'un simple produit de maquillage ; c'est une déclaration audacieuse de style. Offrant une couleur éclatante et durable, ce rouge à lèvres transforme instantanément votre apparence, ajoutant une touche de glamour et de confiance.`,
@@ -35,6 +37,7 @@ const products = [
   {
     id: 3,
     nom: "Coloration intense - Noir ébène",
+    note: 4.8,
     categorie: "Coloration",
     description:
       "Obtenez une couleur noire intense pour vos cheveux avec cette coloration.",
@@ -46,6 +49,7 @@ const products = [
   {
     id: 4,
     nom: "Shampooing nourrissant à l'huile d'argan",
+    note: 4.6,
     categorie: "Shampooing",
     description:
       "Nettoie en douceur tout en nourrissant les cheveux avec de l'huile d'argan.",
@@ -57,6 +61,7 @@ const products = [
   {
     id: 5,
     nom: "Lotion tonique rafraîchissante",
+    note: 4.2,
     categorie: "Crème de peau",
     description:
       "Tonifie et rafraîchit la peau tout en laissant une sensation agréable.",
@@ -68,6 +73,7 @@ const products = [
   {
     id: 6,
     nom: "Rouge à lèvres rose poudré",
+    note: 3.7,
     categorie: "Rouge à lèvre",
     description:
       "Ajoute une touche délicate de rose à vos lèvres avec une finition satinée.",
@@ -79,6 +85,7 @@ const products = [
   {
     id: 7,
     nom: "Coloration vibrante - Rouge flamboyant",
+    note: 4.9,
     categorie: "Coloration",
     description:
       "Transformez vos cheveux avec une couleur rouge flamboyante et vibrante.",
@@ -90,6 +97,7 @@ const products = [
   {
     id: 8,
     nom: "Shampooing fortifiant à la kératine",
+    note: 4.4,
     categorie: "Shampooing",
     description:
       "Renforce les cheveux en profondeur grâce à la kératine, laissant des cheveux sains et brillants.",
@@ -101,6 +109,7 @@ const products = [
   {
     id: 9,
     nom: "Soin hydratant intensif",
+    note: 4.1,
     categorie: "Crème de peau",
     description:
       "Un traitement intensif pour hydrater et régénérer la peau en profondeur.",
@@ -112,6 +121,7 @@ const products = [
   {
     id: 10,
     nom: "Rouge à lèvres mat - Nude élégant",
+    note: 3.6,
     categorie: "Rouge à lèvre",
     description:
       "Offrez à vos lèvres une teinte nude élégante avec une finition mate longue tenue.",
@@ -123,6 +133,7 @@ const products = [
   {
     id: 11,
     nom: "Coloration naturelle - Brun chocolat",
+    note: 4.7,
     categorie: "Coloration",
     description:
       "Une coloration naturelle qui donne à vos cheveux une teinte brun chocolat séduisante.",
@@ -134,6 +145,7 @@ const products = [
   {
     id: 12,
     nom: "Shampooing volumisant à la camomille",
+    note: 4.5,
     categorie: "Shampooing",
     description:
       "Apporte du volume aux cheveux fins tout en apaisant le cuir chevelu avec de la camomille.",
@@ -145,6 +157,7 @@ const products = [
   {
     id: 13,
     nom: "Crème anti-rides",
+    note: 3.8,
     categorie: "Crème de peau",
     description:
       "Réduit l'apparence des rides et améliore l'élasticité de la peau.",
@@ -156,6 +169,7 @@ const products = [
   {
     id: 14,
     nom: "Rouge à lèvres corail éclatant",
+    note: 2.4,
     categorie: "Rouge à lèvre",
     description:
       "Donne à vos lèvres une teinte corail éclatante pour un look audacieux.",
@@ -167,6 +181,7 @@ const products = [
   {
     id: 15,
     nom: "Coloration douce - Blond doré",
+    note: 4.6,
     categorie: "Coloration",
     description:
       "Éclaircit en douceur vos cheveux avec une teinte blond doré lumineux.",
@@ -178,6 +193,7 @@ const products = [
   {
     id: 16,
     nom: "Shampooing réparateur à l'huile d'olive",
+    note: 4.3,
     categorie: "Shampooing",
     description:
       "Répare les cheveux abîmés en profondeur grâce à l'huile d'olive nourrissante.",
@@ -189,6 +205,7 @@ const products = [
   {
     id: 17,
     nom: "Masque hydratant nuit",
+    note: 3.9,
     categorie: "Crème de peau",
     description:
       "Un masque nourrissant à laisser agir toute la nuit pour une peau hydratée au réveil.",
@@ -200,6 +217,7 @@ const products = [
   {
     id: 18,
     nom: "Rouge à lèvres mauve mystique",
+    note: 4.5,
     categorie: "Rouge à lèvre",
     description:
       "Ajoutez une touche de mystère avec ce rouge à lèvres mauve aux nuances envoûtantes.",
@@ -211,6 +229,7 @@ const products = [
   {
     id: 19,
     nom: "Coloration auburn intense",
+    note: 4.7,
     categorie: "Coloration",
     description:
       "Obtenez une coloration auburn intense pour une transformation capillaire audacieuse.",
@@ -222,6 +241,7 @@ const products = [
   {
     id: 20,
     nom: "Shampooing apaisant à la menthe",
+    note: 4.4,
     categorie: "Shampooing",
     description:
       "Calme le cuir chevelu et rafraîchit les cheveux grâce à l'extrait de menthe apaisant.",
@@ -233,6 +253,7 @@ const products = [
   {
     id: 21,
     nom: "Sérum anti-taches",
+    note: 4.2,
     categorie: "Crème de peau",
     description:
       "Atténue les taches sombres et uniformise le teint pour une peau radieuse.",
@@ -244,6 +265,7 @@ const products = [
   {
     id: 22,
     nom: "Rouge à lèvres nude subtil",
+    note: 4.6,
     categorie: "Rouge à lèvre",
     description:
       "Un nude subtil qui ajoute une touche de couleur naturelle à vos lèvres.",
@@ -255,6 +277,7 @@ const products = [
   {
     id: 23,
     nom: "Coloration cuivrée flamboyante",
+    note: 4.8,
     categorie: "Coloration",
     description:
       "Optez pour une coloration cuivrée flamboyante pour des cheveux vibrants et audacieux.",
@@ -266,17 +289,19 @@ const products = [
   {
     id: 24,
     nom: "Shampooing éclatant à la grenade",
+    note: 4.5,
     categorie: "Shampooing",
     description:
       "Apporte de l'éclat aux cheveux tout en les nourrissant avec l'extrait de grenade revitalisant.",
     descriptionLongue: `Le Shampooing éclatant à la grenade offre une expérience revitalisante pour vos cheveux tout en apportant une touche d'éclat naturel. L'extrait de grenade revitalisant nourrit les cheveux, laissant une chevelure brillante et pleine de vitalité.`,
     ingredients: `Enrichi en extrait de grenade, ce shampooing éclatant nettoie en douceur tout en préservant la santé de vos cheveux. Les ingrédients nourrissants apportent brillance et éclat.`,
     prix: 4.99,
-    image: "/Shampooing/44c07866-4d5a-40a0-9f86-cf24e5f43ab2.webp",
+    image: "/Shampoing/04ea1830-38dc-4e66-b8d4-fe31663315bf.webp",
   },
   {
     id: 25,
     nom: "Crème anti-acné",
+    note: 3.4,
     categorie: "Crème de peau",
     description:
       "Combat les imperfections et l'acné pour une peau plus lisse et éclatante.",
@@ -288,6 +313,7 @@ const products = [
   {
     id: 26,
     nom: "Rouge à lèvres Bordeaux chic",
+    note: 2.7,
     categorie: "Rouge à lèvre",
     description:
       "Une teinte Bordeaux chic pour des lèvres élégantes et sophistiquées.",
@@ -299,6 +325,7 @@ const products = [
   {
     id: 27,
     nom: "Coloration pastel - Rose tendre",
+    note: 3.9,
     categorie: "Coloration",
     description:
       "Adoptez une coloration pastel rose tendre pour une apparence douce et moderne.",
@@ -310,6 +337,7 @@ const products = [
   {
     id: 28,
     nom: "Shampooing fortifiant à la biotine",
+    note: 4.3,
     categorie: "Shampooing",
     description:
       "Renforce les cheveux fragiles avec de la biotine, favorisant la croissance et la santé capillaire.",
