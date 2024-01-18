@@ -17,7 +17,7 @@ const products = [
     categorie: "Crème de peau",
     description: "Hydrate la peau en profondeur, la laissant douce et souple.",
     prix: 12.99,
-    image: "https://picsum.photos/id/1/200/300",
+    image: "images/Creme_de_peau/0c498423-cd31-414b-b5ac-65e198a24176.webp",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const products = [
     categorie: "Rouge à lèvre",
     description: "Donne à vos lèvres une couleur éclatante et durable.",
     prix: 6.99,
-    image: "https://picsum.photos/id/2/200/300",
+    image: "images/Rouge_a_levres/0f31c2ee-689a-47b7-9906-f932523ff3ce.webp",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const products = [
     description:
       "Obtenez une couleur noire intense pour vos cheveux avec cette coloration.",
     prix: 9.99,
-    image: "https://picsum.photos/id/3/200/300",
+    image: "../images/Coloration/2d63400f-6b95-46bd-9f27-169e64a4b9c6.webp",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const products = [
     description:
       "Nettoie en douceur tout en nourrissant les cheveux avec de l'huile d'argan.",
     prix: 4.99,
-    image: "https://picsum.photos/id/4/200/300",
+    image: "images/Shampoing/153a114c-f8c9-416e-84bc-10b0f7ccb78a.webp",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const products = [
     description:
       "Tonifie et rafraîchit la peau tout en laissant une sensation agréable.",
     prix: 9.99,
-    image: "https://picsum.photos/id/5/200/300",
+    image: "images/Creme_de_peau/58902492-3187-4db8-affa-4b6bd4221621.webp",
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ const products = [
     description:
       "Renforce les cheveux en profondeur grâce à la kératine, laissant des cheveux sains et brillants.",
     prix: 4.99,
-    image: "https://picsum.photos/id/8/200/300",
+    image: "images/Shampoing/7ced709b-9271-4071-8172-79d67df6ca9c.webp",
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ const products = [
     description:
       "Un traitement intensif pour hydrater et régénérer la peau en profondeur.",
     prix: 14.99,
-    image: "https://picsum.photos/id/9/200/300",
+    image: "images/Creme_de_peau/285e98a0-fed4-41a8-a07a-302eef102165.webp",
   },
   {
     id: 10,
@@ -115,7 +115,7 @@ const products = [
     description:
       "Apporte du volume aux cheveux fins tout en apaisant le cuir chevelu avec de la camomille.",
     prix: 4.99,
-    image: "https://picsum.photos/id/12/200/300",
+    image: "images/Shampoing/53865e39-f423-4f57-a6d7-07456725f33f.webp",
   },
   {
     id: 13,
@@ -124,7 +124,7 @@ const products = [
     description:
       "Réduit l'apparence des rides et améliore l'élasticité de la peau.",
     prix: 12.99,
-    image: "https://picsum.photos/id/13/200/300",
+    image: "images/Creme_de_peau/a9b46408-dae4-4014-aebe-6012395b891f.webp",
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ const products = [
     description:
       "Répare les cheveux abîmés en profondeur grâce à l'huile d'olive nourrissante.",
     prix: 4.99,
-    image: "https://picsum.photos/id/16/200/300",
+    image: "images/Shampoing/3dfdb08f-c513-4e12-933c-54e051979c40.webp",
   },
   {
     id: 17,
@@ -160,7 +160,7 @@ const products = [
     description:
       "Un masque nourrissant à laisser agir toute la nuit pour une peau hydratée au réveil.",
     prix: 14.99,
-    image: "https://picsum.photos/id/17/200/300",
+    image: "images/Creme_de_peau/d33fefba-5170-4a85-ae63-e3b4497ad440.webp",
   },
   {
     id: 18,
@@ -187,7 +187,7 @@ const products = [
     description:
       "Calme le cuir chevelu et rafraîchit les cheveux grâce à l'extrait de menthe apaisant.",
     prix: 4.99,
-    image: "https://picsum.photos/id/20/200/300",
+    image: "images/Shampoing/d9957a91-f82c-42ec-8493-8f3c627b9494.webp",
   },
   {
     id: 21,
@@ -196,7 +196,7 @@ const products = [
     description:
       "Atténue les taches sombres et uniformise le teint pour une peau radieuse.",
     prix: 12.99,
-    image: "https://picsum.photos/id/21/200/300",
+    image: "images/Creme_de_peau/50e617c2-23db-4604-8d83-601bd1928462.webp",
   },
   {
     id: 22,
@@ -223,7 +223,7 @@ const products = [
     description:
       "Apporte de l'éclat aux cheveux tout en les nourrissant avec l'extrait de grenade revitalisant.",
     prix: 4.99,
-    image: "https://picsum.photos/id/24/200/300",
+    image: "images/Shampoing/b3a750f7-696b-4e29-9d09-67b21c3b051e.webp",
   },
   {
     id: 25,
@@ -232,7 +232,7 @@ const products = [
     description:
       "Combat les imperfections et l'acné pour une peau plus lisse et éclatante.",
     prix: 12.99,
-    image: "https://picsum.photos/id/25/200/300",
+    image: "images/Creme_de_peau/aeac20ab-1a22-421c-906f-0662a67a9c59.webp",
   },
   {
     id: 26,
@@ -259,7 +259,7 @@ const products = [
     description:
       "Renforce les cheveux fragiles avec de la biotine, favorisant la croissance et la santé capillaire.",
     prix: 4.99,
-    image: "https://picsum.photos/id/28/200/300",
+    image: "images/Shampoing/2e72c05d-e55a-4922-802f-ed2b000192bd.webp",
   },
 ];
 

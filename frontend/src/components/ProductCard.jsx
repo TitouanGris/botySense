@@ -6,10 +6,16 @@ function ProductCard({ product }) {
 
   return (
     <div>
-      <img src={image} alt={nom} />
-      <h1>{nom}</h1>
-      <p>{description}</p>
-      <p>{prix} €</p>
+      <div className="productCard">
+        <img src={image} alt={nom} />
+        <div className="text">
+          <h1>{nom}</h1>
+          <p className="description">{description}</p>
+          <p className="prix">{prix} €</p>
+          <button type="button">Ajouter au panier</button>
+          <span>Plus d'infos</span>
+        </div>
+      </div>
     </div>
   );
 }

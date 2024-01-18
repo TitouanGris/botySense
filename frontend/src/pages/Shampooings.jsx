@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 
 function Shampooings({ products }) {
   return (
-    <div>
+    <div className="productPages">
       {products
         .filter((product) => product.categorie === "Shampooing")
         .map((product) => (

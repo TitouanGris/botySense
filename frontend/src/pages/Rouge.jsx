@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 
 function Rouge({ products }) {
   return (
-    <div>
+    <div className="productPages">
       {products
         .filter((product) => product.categorie === "Rouge à lèvre")
         .map((product) => (
