@@ -2,7 +2,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 function Slider() {
-  const baseUrl = "http://react-responsive-carousel.js.org/assets/";
   const datas = [
     {
       id: 1,
@@ -27,7 +26,7 @@ function Slider() {
   return (
     <div className="container_slide">
       <h1 className="title__slide">Nos Incontournables</h1>
-      <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
+      <Carousel autoPlay interval={3000} infiniteLoop>
         {datas.map((slide) => (
           <div className="slide" key={slide.id}>
             <img className="slideimage" src={slide.image} alt="" />
