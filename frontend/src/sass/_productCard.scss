@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   margin-inline: 1vw;
   margin-bottom: 5vh;
+  
   .productCard {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,8 @@
     margin-bottom: 1.2vh;
     border-radius: 5px;
     box-shadow: 0 0 2px $marron-chocolat;
-    background-color: white;
+    background-image: url(./images/backgroundcard4.svg);
+    background-repeat: no-repeat;
     color: $marron-chocolat;
     font-size: 1.2rem;
     text-align: center;
