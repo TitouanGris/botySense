@@ -9,19 +9,32 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    height: 400px;
+    height: 100%;
     padding: 10px;
     margin-top: 5vh;
     margin-right: 3vw;
     margin-left: 3vw;
     margin-bottom: 1.2vh;
-    border: 1px solid $marron-chocolat;
     border-radius: 5px;
-    box-shadow: 0 0 5px $marron-chocolat;
-    background-color: $beige-creme;
+    box-shadow: 0 0 2px $marron-chocolat;
+    background-color: white;
     color: $marron-chocolat;
     font-size: 1.2rem;
     text-align: center;
+    span {
+      display: none;
+    }
+    &:hover {
+      box-shadow: 0 0 5px $or-rose;
+      border-color: $or-rose;
+      span {
+        display: block;
+        position: absolute;
+        transform: translate(30%, -350%);
+        backdrop-filter: blur(2px);
+        font-size: 1.8rem;
+      }
+    }
     img {
       width: 100%;
       height: 200px;
@@ -47,29 +60,25 @@
         text-align: end;
         font-size: 0.8rem;
       }
-    }
-  }
-}
-.productButton {
-  display: flex;
-  justify-content: center;
-  button {
-    width: 100%;
-    height: 40px;
-    padding-inline: 10px;
-    margin-bottom: 10px;
-    border: 1px solid $beige-creme;
-    border-radius: 5px;
-    background-color: $marron-chocolat;
-    color: $beige-creme;
-    width: fit-content;
-    font-size: 1rem;
-    box-shadow: 0 0 5px $beige-creme;
-    &:hover {
-      background-color: $beige-creme;
-      color: $marron-chocolat;
-      border-color: $marron-chocolat;
-      cursor: pointer;
+      button {
+        width: 100%;
+        height: 40px;
+        padding-inline: 10px;
+        border: 1px solid $beige-creme;
+        border-radius: 5px;
+        background-color: $marron-chocolat;
+        color: $beige-creme;
+        width: fit-content;
+        font-size: 1rem;
+        box-shadow: 0 0 5px $beige-creme;
+        margin: 0 auto; /* Ajoutez cette ligne pour centrer le bouton */
+        &:hover {
+          background-color: $beige-creme;
+          color: $marron-chocolat;
+          border-color: $marron-chocolat;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

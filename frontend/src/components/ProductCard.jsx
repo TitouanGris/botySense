@@ -12,10 +12,9 @@ function ProductCard({ product }) {
           <h1>{nom}</h1>
           <p className="description">{description}</p>
           <p className="prix">{prix} €</p>
+          <button type="button">Ajouter au panier</button>
+          <span>Plus d'infos</span>
         </div>
-      </div>
-      <div className="productButton">
-        <button type="button">Ajouter au panier</button>
       </div>
     </div>
   );
