@@ -33,6 +33,8 @@
     "lint-staged": "^13.2.3"
   },
   "dependencies": {
-    "react-html-parser": "^2.0.2"
+    "react-gif-player": "^0.4.2",
+    "react-responsive-carousel": "^3.2.23",
+    "uuid": "^9.0.1"
   }
 }
