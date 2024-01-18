@@ -59,7 +59,7 @@
       justify-content: center;
       align-items: center;
       gap: 100px;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
 
       .gif {
         border-radius: 25px;
@@ -99,8 +99,7 @@
   }
 }
 #slideshow {
-  padding-top: 50px;
-  height: 40vh;
+  height: 25vh;
   width: 100%;
   box-sizing: border-box;
 }
@@ -209,6 +208,14 @@
   box-shadow: 0px 0px 5px 0px #000;
   border-radius: 1px;
   background-color: white !important;
+}
+
+.testzeubi{
+  display: flex;
+  justify-content: center !important;
+  font-family: "test", sans-serif;
+  margin-bottom: 50px;
+  text-decoration: underline;
 }
 
 
