@@ -379,7 +379,7 @@ const router = createBrowserRouter([
         element: <Rouge products={products} />,
       },
       {
-        path: "/Corbeille",
+        path: "/Panier",
         element: <Corbeille />,
       },
     ],
