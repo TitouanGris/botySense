@@ -50,7 +50,7 @@ function Slider() {
         </div>
         <div className="coloration">
           <img src="./images/coloration.svg" alt="" />
-          <h4>COLORATION</h4>
+          <h4>COLORATIONS</h4>
         </div>
         <div className="cheveux">
           <img src="./images/cheveux.svg" alt="" />
