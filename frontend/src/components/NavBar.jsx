@@ -11,9 +11,11 @@ function NavBar() {
           <NavLink to="Cremes">
             <h3>Crèmes</h3>
           </NavLink>
-          <div className="logo">
-            <img className="boty" src="/images/BotySense.webp" alt="logo" />
-          </div>
+          <NavLink to="/">
+            <div className="logo">
+              <img className="boty" src="/images/BotySense.webp" alt="logo" />
+            </div>
+          </NavLink>
           <NavLink to="Rouges">
             <h3>rouge à lèvre</h3>
           </NavLink>

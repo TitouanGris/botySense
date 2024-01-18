@@ -13,7 +13,6 @@ function ProductCard({ product }) {
           <p className="description">{description}</p>
           <p className="prix">{prix} €</p>
           <button type="button">Ajouter au panier</button>
-          <span>Plus d'infos</span>
         </div>
       </div>
     </div>
