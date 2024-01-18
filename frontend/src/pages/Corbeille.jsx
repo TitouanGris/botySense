@@ -1,10 +1,6 @@
 function Corbeille() {
   return (
     <div>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Panier E-commerce</title>
-      <link rel="stylesheet" />
       <main className="container">
         <div className="grid">
           <section>
@@ -16,26 +12,26 @@ function Corbeille() {
               <article>
                 <figure>
                   <img
-                    src="https://source.unsplash.com/random/200x200"
+                    src="/Creme_de_peau/d33fefba-5170-4a85-ae63-e3b4497ad440.webp"
                     alt="Article 1"
                   />
                   <figcaption>Article 1</figcaption>
                 </figure>
-                <p>Description de l'article 1. Prix: 20€</p>
+                <p>Masque hydratant nuit - Prix: 14.99€</p>
                 <input type="number" defaultValue={1} />
-                <button>Supprimer</button>
+                <button type="button">Supprimer</button>
               </article>
               <article>
                 <figure>
                   <img
-                    src="https://source.unsplash.com/random/201x201"
+                    src="/Coloration/c8a699b1-2e5d-4f50-afbc-294acc988ea6.webp"
                     alt="Article 2"
                   />
                   <figcaption>Article 2</figcaption>
                 </figure>
-                <p>Description de l'article 2. Prix: 35€</p>
+                <p>Coloration cuivrée flamboyante - Prix: 9.99€</p>
                 <input type="number" defaultValue={1} />
-                <button>Supprimer</button>
+                <button type="button">Supprimer</button>
               </article>
               {/* Ajoutez plus d'articles ici */}
             </div>
