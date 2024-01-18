@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import ChatBotMessage from "./ChatBotMessage";
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
@@ -10,7 +11,7 @@ const ChatBot = () => {
     // Message d'accueil lorsque le composant est monté
     if (isOpen && messages.length === 0) {
       const welcomeMessage = "Bonjour! Comment puis-je vous aider aujourd'hui?";
-      setMessages([{ text: welcomeMessage, sender: "chat" }]);
+      setMessages([{ text: welcomeMessage, sender: "chat", isHTML: true }]);
     }
 
     // Faire défiler la boîte de discussion vers le bas à chaque mise à jour de messages
@@ -34,15 +35,15 @@ const ChatBot = () => {
       // Utilisateur a mentionné un mot-clé spécifique
       if (userMessage.includes("masque")) {
         chatResponse =
-          "D'accord, je vous envoie un lien vers un produit excellent pour votre demande.";
+          (<div>D'accord, je vous envoie un lien vers un produit excellent pour votre demande. <a href='http://localhost:3000/Products/17' target='_blank'>Cliquez ici</a></div>);
       } else if (userMessage.includes("shampooing")) {
         chatResponse =
-          "Voici les liens des 3 shampooings les mieux notés par nos clients.";
+          (<div>Voici le lien du shampooing le mieux noté par nos clients. <a href='http://localhost:3000/Products/4' target='_blank'>Cliquez ici</a></div>);
       } else if (userMessage.includes("allergique")) {
         chatResponse =
-          "Très bien, voici les produits qui ne contiennent pas de phenoxyethanol.";
+          (<div>Très bien, voici les produits qui ne contiennent pas de phenoxyethanol.<a href='http://localhost:3000/Products/2' target='_blank'>Cliquez ici</a></div>);
       } else if (userMessage.includes("coloration")) {
-        chatResponse = "Bien sûr, voici nos colorations cuivre.";
+        chatResponse = (<div>Bien sûr, voici nos colorations cuivre.<a href='http://localhost:3000/Products/23' target='_blank'>Cliquez ici</a></div>);
       }else if (userMessage.includes("merci")) {
         chatResponse = "De rien.";
       }
@@ -56,7 +57,7 @@ const ChatBot = () => {
     setTimeout(() => {
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: chatResponse, sender: "chat" },
+        { text: chatResponse, sender: "chat", isHTML: true },
       ]);
     }, 1000);
   };
@@ -82,7 +83,11 @@ const ChatBot = () => {
                 }
                 key={index}
               >
-                {message.text}
+                {message.isHTML ? (
+              <ChatBotMessage text={message.text}></ChatBotMessage>
+            ) : (
+              <div>{message.text}</div>
+            )}
               </p>
             ))}
           </div>
