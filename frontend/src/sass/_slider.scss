@@ -1,14 +1,14 @@
-@font-face {
-  font-family: 'BlairITC-Bold';
-  src: url('./frontend/font/BlairTC-Blod.ttf') format('truetype');
-}
+
+
 
 .title__slide {
   display: flex;
   justify-content: center;
   font-size: 50px;
   background-color: #f5f5dc;
+  font-family: 'test', sans-serif;
 }
+
 
 .carousel {
   position: relative !important;
@@ -68,3 +68,4 @@
     justify-content: center;
   }
 }
+
