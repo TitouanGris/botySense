@@ -6,28 +6,28 @@ function Slider() {
   const datas = [
     {
       id: 1,
-      image: `${baseUrl}1.jpeg`,
-      title: "Titre du slider 1",
-      text: "Description de votre premier slide",
+      image: `./images/BotySense_slide1.svg`,
+      title: "",
+      text: "",
     },
     {
       id: 2,
-      image: `${baseUrl}5.jpeg`,
-      title: "Titre du slider 2",
-      text: `Lorem blablabla...`,
+      image: `./images/BotySense_slide2.svg`,
+      title: "",
+      text: ``,
     },
     {
       id: 3,
-      image: `${baseUrl}2.jpeg`,
-      title: "Titre du slider 3",
-      text: `Lorem blablabla...`,
+      image: `./images/BotySense_slide3.svg`,
+      title: "",
+      text: ``,
     },
   ];
 
   return (
-    <div>
+    <div className="container_slide">
       <h1 className="title__slide">Nos Incontournables</h1>
-      <Carousel>
+      <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
         {datas.map((slide) => (
           <div className="slide" key={slide.id}>
             <img className="slideimage" src={slide.image} alt="" />
@@ -38,21 +38,22 @@ function Slider() {
           </div>
         ))}
       </Carousel>
+
       <div className="tendance">
         <div className="Maquillage">
-          <img src="https://via.placeholder.com/300x300" alt="" />
+          <img src="./images/maquillages.svg" alt="" />
           <h4>MAQUILLAGE</h4>
         </div>
         <div className="soin">
-          <img src="https://via.placeholder.com/300x300" alt="" />
+          <img src="./images/soins.svg" alt="" />
           <h4>SOIN DE LA PEAU</h4>
         </div>
         <div className="coloration">
-          <img src="https://via.placeholder.com/300x300" alt="" />
-          <h4>COLORATION</h4>
+          <img src="./images/coloration.svg" alt="" />
+          <h4>COLORATIONS</h4>
         </div>
         <div className="cheveux">
-          <img src="https://via.placeholder.com/300x300" alt="" />
+          <img src="./images/cheveux.svg" alt="" />
           <h4>CHEVEUX</h4>
         </div>
       </div>
