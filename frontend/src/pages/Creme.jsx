@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ProductCard from "../components/ProductCard";
+import ChatBot from "../components/ChatBot";
 
 function Creme({ products }) {
   return (
@@ -13,6 +14,7 @@ function Creme({ products }) {
             <ProductCard product={product} key={product.id} />
           </Link>
         ))}
+        <ChatBot />
     </div>
   );
 }
