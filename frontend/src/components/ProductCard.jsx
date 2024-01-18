@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ChatBot from "./ChatBot";
 
 function ProductCard({ product }) {
   const { nom, description, prix, image } = product;
@@ -15,7 +16,7 @@ function ProductCard({ product }) {
           <button type="button">Ajouter au panier</button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
