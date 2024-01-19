@@ -46,6 +46,7 @@
     overflow: auto;
     flex-direction: column;
     padding: 10px 10px 0 10px;
+    font-size: 0.8rem;
 
     &::-webkit-scrollbar {
       width: 0.5vw;
@@ -67,15 +68,21 @@
 
     p {
       max-width: 60%;
-      font-size: .8rem;
       background-color: #7072de;
-     
+      font-family: "Roboto", sans-serif;
       padding: 10px;
       margin: 10px 0;
       position: relative;
       word-wrap: break-word;
+      div {
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8rem;
+        a {
+          font-family: "Roboto", sans-serif;
+          font-size: 0.8rem;
+        }
+      }
     }
-
     p::after {
       content: "";
       position: absolute;
@@ -90,20 +97,24 @@
     }
 
     .user-message {
-        align-self: flex-end;
-        background-color: $or-rose;
-        border-radius: 15px 15px 0px 15px;
-        
-        
+      align-self: flex-end;
+      background-color: $or-rose;
+      border-radius: 15px 15px 0px 15px;
     }
     .ai-message {
-        color: white;
-        align-self: flex-start;
-        border-radius: 15px 15px 15px 0px;
+      color: white;
+      align-self: flex-start;
+      border-radius: 15px 15px 15px 0px;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.8rem;
+      a{
+        color: $or-rose;
+      }
     }
   }
 
   .input-container {
+    padding: 10px;
   }
 
   .input {
@@ -112,23 +123,23 @@
     padding-right: 2.5vw;
     padding-inline: 10px;
     width: 100%;
-    font-size: .9rem;
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
   }
 
   .send {
     border: none;
     border-radius: 30px;
-    background-color: $marron-chocolat;
     display: flex;
-    width: 2.2vw;
-    height: 5vh;
+    width: auto;
+    height: 4vh;
     justify-content: center;
     position: absolute;
-    right: 0.1vw; /* Same as padding-right for input */
+    right: 10px; /* Same as padding-right for input */
     color: white;
     font-weight: bold;
     cursor: pointer;
-    bottom: 0; /* Adjust as needed */
+    bottom: 10px; /* Adjust as needed */
     // transform: translateY(50%); /* Center vertically */
   }
 }

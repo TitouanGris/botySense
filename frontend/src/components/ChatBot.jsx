@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import ChatBotMessage from "./ChatBotMessage";
-const ChatBot = () => {
+
+function ChatBot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -20,31 +21,62 @@ const ChatBot = () => {
     }
   }, [messages, isOpen]);
 
-
-
   const handleSend = () => {
-
     // const response = [ "D'accord, je vous envoie un lien vers un produit exelent pour votre demande.", "Voici les liens des 3 shampooings les mieux notés par nos clients.", "Très bien, voici les produits qui ne contiennent pas de phenoxyethanol.", "Bien sûr, voici nos colorations cuivre"];
-    const keywords = ["masque", "shampooing", "allergique", "coloration", "merci"];
+    const keywords = [
+      "masque",
+      "shampooing",
+      "allergique",
+      "coloration",
+      "merci",
+    ];
     const userMessage = input.toLowerCase();
 
     // Logique pour déterminer la réponse appropriée en fonction des mots-clés
-    let chatResponse = "Je suis en cours d'apprentissage, veuillez reformuler votre demande.";
+    let chatResponse =
+      "Je suis en cours d'apprentissage, veuillez reformuler votre demande.";
 
     if (keywords.some((keyword) => userMessage.includes(keyword))) {
       // Utilisateur a mentionné un mot-clé spécifique
       if (userMessage.includes("masque")) {
-        chatResponse =
-          (<div>D'accord, je vous envoie un lien vers un produit excellent pour votre demande. <a href='http://localhost:3000/Products/17' target='_blank'>Cliquez ici</a></div>);
+        chatResponse = (
+          <div>
+            D'accord, je vous envoie un lien vers un produit excellent pour
+            votre demande.{" "}
+            <a href="http://localhost:3000/Products/17" target="_blank">
+              Cliquez ici
+            </a>
+          </div>
+        );
       } else if (userMessage.includes("shampooing")) {
-        chatResponse =
-          (<div>Voici le lien du shampooing le mieux noté par nos clients. <a href='http://localhost:3000/Products/4' target='_blank'>Cliquez ici</a></div>);
+        chatResponse = (
+          <div>
+            Voici le lien du shampooing le mieux noté par nos clients.{" "}
+            <a href="http://localhost:3000/Products/4" target="_blank">
+              Cliquez ici
+            </a>
+          </div>
+        );
       } else if (userMessage.includes("allergique")) {
-        chatResponse =
-          (<div>Très bien, voici les produits qui ne contiennent pas de phenoxyethanol.<a href='http://localhost:3000/Products/2' target='_blank'>Cliquez ici</a></div>);
+        chatResponse = (
+          <div>
+            Très bien, voici les produits qui ne contiennent pas de
+            phenoxyethanol.
+            <a href="http://localhost:3000/Products/2" target="_blank">
+              Cliquez ici
+            </a>
+          </div>
+        );
       } else if (userMessage.includes("coloration")) {
-        chatResponse = (<div>Bien sûr, voici nos colorations cuivre.<a href='http://localhost:3000/Products/23' target='_blank'>Cliquez ici</a></div>);
-      }else if (userMessage.includes("merci")) {
+        chatResponse = (
+          <div>
+            Bien sûr, voici nos colorations cuivre.
+            <a href="http://localhost:3000/Products/23" target="_blank">
+              Cliquez ici
+            </a>
+          </div>
+        );
+      } else if (userMessage.includes("merci")) {
         chatResponse = "De rien.";
       }
     }
@@ -84,10 +116,10 @@ const ChatBot = () => {
                 key={index}
               >
                 {message.isHTML ? (
-              <ChatBotMessage text={message.text}></ChatBotMessage>
-            ) : (
-              <div>{message.text}</div>
-            )}
+                  <ChatBotMessage text={message.text}></ChatBotMessage>
+                ) : (
+                  <div className="reponse-msg">{message.text}</div>
+                )}
               </p>
             ))}
           </div>
@@ -97,16 +129,32 @@ const ChatBot = () => {
               type="text"
               className="input"
               value={input}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handleSend();
+                }
+              }}
               onChange={(e) => setInput(e.target.value)}
             />
             <button type="button" className="send" onClick={handleSend}>
-              →
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 20V4L22 12L3 20ZM5 17L16.85 12L5 7V10.5L11 12L5 13.5V17Z"
+                  fill="black"
+                />
+              </svg>
             </button>
           </div>
         </div>
       )}
     </>
   );
-};
+}
 
 export default ChatBot;

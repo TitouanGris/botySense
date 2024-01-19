@@ -3,6 +3,12 @@
   flex-direction: row;
   padding: 3vh;
   gap: 20px;
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 0.6rem;
+  }
   img {
     height: 35vw;
     border-radius: 5px;
@@ -25,7 +31,6 @@
     border-radius: 5px;
     box-shadow: 0 0 5px $marron-chocolat;
     padding-inline: 6vw;
-
     .desc {
       font-size: 1.1rem;
     }
