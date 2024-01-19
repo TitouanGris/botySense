@@ -31,10 +31,5 @@
     "cross-env": "^7.0.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3"
-  },
-  "dependencies": {
-    "react-gif-player": "^0.4.2",
-    "react-responsive-carousel": "^3.2.23",
-    "uuid": "^9.0.1"
   }
 }
