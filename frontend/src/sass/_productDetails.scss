@@ -8,6 +8,15 @@
     border-radius: 5px;
     box-shadow: 0 0 5px $marron-chocolat;
   }
+  .etoiles{
+    .plein{
+      font-size: 3rem;
+    }
+    .vide{
+      font-size: 3rem;
+    }
+
+  }
   .text {
     display: flex;
     flex-direction: column;

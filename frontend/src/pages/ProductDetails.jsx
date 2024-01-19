@@ -14,9 +14,13 @@ function ProductDetails({ products }) {
     const etoilesVides = "☆".repeat(5 - noteArrondie); // Utiliser un caractère d'étoile vide
 
     return (
-      <div>
-        <span style={{ color: "#D79A10" }}>{etoilesPleines}</span>
-        <span style={{ color: "#ccc" }}>{etoilesVides}</span>
+      <div className="etoiles">
+        <span className="plein" style={{ color: "#D79A10" }}>
+          {etoilesPleines}
+        </span>
+        <span className="vide" style={{ color: "#ccc" }}>
+          {etoilesVides}
+        </span>
       </div>
     );
   };
@@ -26,7 +30,8 @@ function ProductDetails({ products }) {
       <img src={image} alt={nom} />
       <div className="text">
         <h1>{nom}</h1>
-        {afficherEtoiles()} <p className="desc">{descriptionLongue}</p>
+        {afficherEtoiles()}
+        <p className="desc">{descriptionLongue}</p>
         <p className="ing">{ingredients}</p>
         <button type="button">{`${prix} € -  Ajouter au panier`}</button>
       </div>
