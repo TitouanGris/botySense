@@ -43,6 +43,9 @@ function Apropos() {
           />
         </div>
       </div>
+      <div className="testzeubi">
+        <p>Découvrir nos collaborateurs</p>
+      </div>
       <section id="slideshow">
         <div className="entire-content">
           <div className="content-carrousel">
